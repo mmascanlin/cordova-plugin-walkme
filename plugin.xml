@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-walkme"
+        version="0.0.1">
+
+  <name>WalkMe Plugin</name>
+
+  <description>
+  </description>
+
+  <author>Andrew Scanlin</author>
+
+  <license>MIT</license>
+
+  <keywords></keywords>
+
+  <repo></repo>
+
+  <issue></issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <!-- ios -->
+  <platform name="ios">
+    <preference name="APP_KEY" />
+    <preference name="APP_SECRET" />
+
+    <config-file target="config.xml" parent="/*">
+        <feature name="WalkMe">
+            <param name="ios-package" value="WalkMe"/>
+            <param name="onload" value="true"/>
+        </feature>
+    </config-file>
+
+    <config-file target="*-Info.plist" parent="WalkMeAppKey">
+        <string>$APP_KEY</string>
+    </config-file>
+
+    <config-file target="*-Info.plist" parent="WalkMeAppSecret">
+        <string>$APP_SECRET</string>
+    </config-file>
+    
+    <header-file src="src/ios/WalkMe.h" />
+    <source-file src="src/ios/WalkMe.m" />
+    <header-file src="src/ios/ABBI.h" />
+
+    <framework src="src/ios/lABBISDK.a" custom="true" />
+    <framework src="CoreMotion.framework" />
+    <framework src="UIKit.framework" />
+    <framework src="Social.framework" />
+    <framework src="StoreKit.framework" />
+    <framework src="SystemConfiguration.framework" />
+    <framework src="WebKit.framework" />
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+    <preference name="APP_KEY" />
+    <preference name="APP_SECRET" />
+
+    <framework src="abbi.io:abbisdk:+" />
+
+    <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="WalkMe">
+            <param name="android-package" value="com.madmobile.plugins.WalkMe" />
+            <param name="onload" value="true" />
+        </feature>
+    </config-file>
+
+    <config-file target="res/xml/config.xml" parent="/*">
+        <preference name="WalkMeAppKey" value="$APP_KEY" />
+        <preference name="WalkMeAppSecret" value="$APP_SECRET" />
+    </config-file>
+
+    <source-file src="src/android/WalkMe.java" target-dir="src/com/madmobile/plugins"/>
+  </platform>
+
+</plugin>

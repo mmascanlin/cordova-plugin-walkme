@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-walkme",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-walkme",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+  },
+  "keywords": [
+  ],
+  "engines": [
+    { 
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Andrew Scanlin <ascanlin@madmobile.com>",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "https://www.madmobile.com"
+}
