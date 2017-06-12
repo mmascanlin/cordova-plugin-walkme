@@ -1,3 +1,10 @@
+/*
+* !!! NOTE FOR CORDOVA-PLUGIN-WALKME CONTRIBUTORS  !!!
+* This is a file provided direcly from Walkme (formerly Abbi) via their CocoaPod.
+* Any changes may not survive an update, so we recommend that you make changes in 
+* the WalkMe class files. 
+*/
+
 // Copyright © 2016 ABBI Ltd. <https://abbi.io> All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
