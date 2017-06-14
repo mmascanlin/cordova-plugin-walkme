@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-walkme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Integrate WalkMe into your Cordova app.",
   "cordova": {
     "id": "cordova-plugin-walkme",
@@ -10,6 +10,8 @@
     ]
   },
   "repository": {
+    "type": "git",
+    "url": "https://github.com/mmascanlin/cordova-plugin-walkme"
   },
   "keywords": [
     "WalkMe",
