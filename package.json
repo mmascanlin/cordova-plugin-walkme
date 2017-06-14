@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-walkme",
+  "version": "0.0.1",
+  "description": "Integrate WalkMe into your Cordova app.",
+  "cordova": {
+    "id": "cordova-plugin-walkme",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+  },
+  "keywords": [
+    "WalkMe",
+    "Walk Me",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    { 
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ],
+  "author": "Andrew Scanlin <ascanlin@madmobile.com>",
+  "license": "Apache-2.0",
+  "bugs": {},
+  "homepage": "https://www.madmobile.com"
+}
