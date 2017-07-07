@@ -25,8 +25,8 @@
 
   <!-- ios -->
   <platform name="ios">
-    <preference name="APP_KEY" />
-    <preference name="APP_SECRET" />
+    <preference name="IOS_APP_KEY" />
+    <preference name="IOS_APP_SECRET" />
 
     <config-file target="config.xml" parent="/*">
         <feature name="WalkMe">
@@ -36,11 +36,11 @@
     </config-file>
 
     <config-file target="*-Info.plist" parent="WalkMeAppKey">
-        <string>$APP_KEY</string>
+        <string>$IOS_APP_KEY</string>
     </config-file>
 
     <config-file target="*-Info.plist" parent="WalkMeAppSecret">
-        <string>$APP_SECRET</string>
+        <string>$IOS_APP_SECRET</string>
     </config-file>
     
     <header-file src="src/ios/WalkMe.h" />
@@ -58,8 +58,8 @@
 
   <!-- android -->
   <platform name="android">
-    <preference name="APP_KEY" />
-    <preference name="APP_SECRET" />
+    <preference name="ANDROID_APP_KEY" />
+    <preference name="ANDROID_APP_SECRET" />
 
     <framework src="abbi.io:abbisdk:+" />
 
@@ -71,8 +71,8 @@
     </config-file>
 
     <config-file target="res/xml/config.xml" parent="/*">
-        <preference name="WalkMeAppKey" value="$APP_KEY" />
-        <preference name="WalkMeAppSecret" value="$APP_SECRET" />
+        <preference name="WalkMeAppKey" value="$ANDROID_APP_KEY" />
+        <preference name="WalkMeAppSecret" value="$ANDROID_APP_SECRET" />
     </config-file>
 
     <source-file src="src/android/WalkMe.java" target-dir="src/com/madmobile/plugins"/>
