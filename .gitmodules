@@ -1,0 +1,3 @@
+[submodule "iosdk"]
+	path = iosdk
+	url = https://github.com/abbiio/iosdk
