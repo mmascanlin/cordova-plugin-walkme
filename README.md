@@ -10,7 +10,7 @@ This plugin is not maintained by WalkMe, so please do not contact them with any 
 
 Install with two variables per OS - **[OS]_APP_KEY** and **[]OS_APP_SECRET** available from the WalkMe Console. 
 
-`cordova plugin add cordova-plugin-walkme --variable IOS_APP_KEY=LONGSTRINGFROMWALKME --variable IOS_APP_SECRET=EVENLONGERSTRINGFROMWALKME` --variable ANRDOID_APP_KEY=ANOTHERLONGSTRINGFROMWALKME --variable ANDROID_APP_SECRET=ANOTHEREVENLONGERSTRINGFROMWALKME`
+`cordova plugin add cordova-plugin-walkme --variable IOS_APP_KEY=LONGSTRINGFROMWALKME --variable IOS_APP_SECRET=EVENLONGERSTRINGFROMWALKME --variable ANDROID_APP_KEY=ANOTHERLONGSTRINGFROMWALKME --variable ANDROID_APP_SECRET=ANOTHEREVENLONGERSTRINGFROMWALKME`
 
 ## To Use
 
