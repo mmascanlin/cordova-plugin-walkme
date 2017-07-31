@@ -41,7 +41,7 @@ public class WalkMe extends CordovaPlugin {
         Log.v(TAG, "Entering sendGoal");
 
         if (args.length() == 1) {
-            ABBI.sendGoal(args.getString(0), null);
+            ABBI.Goal.track(args.getString(0), null);
             Log.v(TAG, "Sent goal without properties");
         } else {
             try {
@@ -56,7 +56,7 @@ public class WalkMe extends CordovaPlugin {
                     properties.put(key, value);
                 }
 
-                ABBI.sendGoal(goalName, properties);
+                ABBI.Goal.track(goalName, properties);
                 Log.v(TAG, "Sent goal with properties");
             } catch (JSONException e) {
                 Log.e(TAG, "Error Sending Goal");
