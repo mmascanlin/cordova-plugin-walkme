@@ -33,5 +33,5 @@ module.exports = {
         }
 
         exec(null, null, 'WalkMe', 'sendGoal', [ goalName, properties ]);
-    },
+    }
 };
