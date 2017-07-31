@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-walkme.WalkMe", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,13 +26,25 @@ var exec = require('cordova/exec');
  * Provides Android Integration w/ WalkMe.
  */
 module.exports = {
-    sendGoal : function(goalName, properties) {
-        if (typeof goalName === "undefined" || goalName.length === 0) {
-            return ;
-        } else if (typeof properties !== "object" || properties.length === 0) {
-            properties = null;
+    sendGoal : function() {
+        var nativeArgs = [];
+
+        if(arguments.length === 0 || typeof arguments[0] === "undefined" || arguments[0].length === 0) {
+            return false;
+        } else {
+            nativeArgs.unshift(arguments[0]);
         }
 
-        exec(null, null, 'WalkMe', 'sendGoal', [ goalName, properties ]);
+        if (arguments.length > 1 && typeof arguments[1] === "object") {
+            nativeArgs.push(arguments[1]);
+        }
+
+        if (nativeArgs.length > 0) {
+            exec(null, null, 'WalkMe', 'sendGoal', nativeArgs);
+        } else {
+            return false;
+        }
     }
 };
+
+});
