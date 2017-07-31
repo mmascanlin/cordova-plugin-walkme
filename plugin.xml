@@ -76,7 +76,7 @@
     </config-file>
 
     <js-module src="www/WalkMe.js" name="WalkMe">
-      <clobbers target="WalkMe" />
+      <clobbers target="window.plugins.WalkMe" />
     </js-module>
 
     <config-file target="res/xml/config.xml" parent="/*">
