@@ -30,15 +30,12 @@
 }
 
 - (void) sendGoal:(CDVInvokedUrlCommand *)command {
-    NSLog(@"sendGoal");
-
     NSArray* args = command.arguments;
     NSUInteger argc = [args count];
+    NSString* goalName = [NSString stringWithString:[command argumentAtIndex:0 withDefault:[NSNull null]]];
 
-    if( argc >= 1 ) {
-        NSString* goalName = [NSString stringWithString:[command argumentAtIndex:0 withDefault:[NSNull null]]];
+    if( argc > 1 ) {
         NSDictionary* properties = [command argumentAtIndex:1 withDefault:[NSNull null]];
-
         [ABBI sendGoal:goalName withProperites:properties];
     } else if ( argc == 1 ){
         [ABBI sendGoal:goalName withProperites:nil];
