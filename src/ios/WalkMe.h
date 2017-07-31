@@ -23,5 +23,6 @@
 @interface WalkMe : CDVPlugin {}
 
 - (void)pluginInitialize;
+- (void)sendGoal:(CDVInvokedUrlCommand *)command;
 
 @end

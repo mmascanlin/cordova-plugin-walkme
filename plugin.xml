@@ -52,6 +52,7 @@
     <header-file src="src/ios/ABBI.h" />
 
     <framework src="src/ios/lABBISDK.a" custom="true" />
+    <framework src="AudioToolbox.framework" />
     <framework src="CoreMotion.framework" />
     <framework src="UIKit.framework" />
     <framework src="Social.framework" />

@@ -29,4 +29,20 @@
     [ABBI start:[NSString stringWithString:appKey] withSecretKey:[NSString stringWithString:appSecret]];
 }
 
+- (void) sendGoal:(CDVInvokedUrlCommand *)command {
+    NSLog(@"sendGoal");
+
+    NSArray* args = command.arguments;
+    NSUInteger argc = [args count];
+
+    if( argc >= 1 ) {
+        NSString* goalName = [NSString stringWithString:[command argumentAtIndex:0 withDefault:[NSNull null]]];
+        NSDictionary* properties = [command argumentAtIndex:1 withDefault:[NSNull null]];
+
+        [ABBI sendGoal:goalName withProperites:properties];
+    } else if ( argc == 1 ){
+        [ABBI sendGoal:goalName withProperites:nil];
+    }
+}
+
 @end
