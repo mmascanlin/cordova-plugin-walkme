@@ -6,15 +6,23 @@ This is a public plugin that integrates with the WalkMe service. You must have a
 
 This plugin is not maintained by WalkMe, so please do not contact them with any bugs. Use at your own risk!
 
-## Install
+
+
+## <a id="reference">Reference</a>
+## Installation
 
 Install with two variables per OS - **[OS]_APP_KEY** and **[OS]_APP_SECRET** available from the WalkMe Console. 
 
 `cordova plugin add cordova-plugin-walkme --variable IOS_APP_KEY=LONGSTRINGFROMWALKME --variable IOS_APP_SECRET=EVENLONGERSTRINGFROMWALKME --variable ANDROID_APP_KEY=ANOTHERLONGSTRINGFROMWALKME --variable ANDROID_APP_SECRET=ANOTHEREVENLONGERSTRINGFROMWALKME`
 
-## To Use
-
 Once the plugin has been installed, you should be good to go! Configure all screens and modules from within WalkMe.
+
+## cordova.plugins.WalkMe.sendGoals
+
+goalName - Required Goal Name
+
+properties - Optional Struct of key/value string pairs
+
 
 ## License
 
