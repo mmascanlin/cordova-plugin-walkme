@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-walkme.WalkMe", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -46,5 +45,3 @@ module.exports = {
         }
     }
 };
-
-});
