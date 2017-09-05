@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-walkme",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Integrate WalkMe into your Cordova app.",
   "cordova": {
     "id": "cordova-plugin-walkme",
@@ -21,7 +21,7 @@
     "cordova-android"
   ],
   "engines": [
-    { 
+    {
       "name": "cordova",
       "version": ">=6.0.0"
     }
