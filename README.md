@@ -23,16 +23,16 @@ cordova plugin add cordova-plugin-walkme
 
 Once the plugin has been installed, you should be good to go! Configure all screens and modules from within WalkMe.
 
-## cordova.plugins.WalkMe.sendGoals
+## window.plugins.WalkMe.sendGoals
 
 goalName - Required Goal Name
 
 properties - Optional Struct of key/value string pairs
 
 ```javascript
-cordova.plugins.WalkMe.sendGoals("Viewed Items");
+window.plugins.WalkMe.sendGoals("Viewed Items");
 
-cordova.plugins.WalkMe.sendGoals("Purchased Item",{"Book":"Count of Monte Cristo","Book":"You Don't Know Js: Scope & Closures"});
+window.plugins.WalkMe.sendGoals("Purchased Item",{"Book":"Count of Monte Cristo","Book":"You Don't Know Js: Scope & Closures"});
 
 ```
 
