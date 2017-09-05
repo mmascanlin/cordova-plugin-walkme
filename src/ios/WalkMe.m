@@ -26,7 +26,7 @@
     NSString* appKey = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"WalkMeAppKey"];
     NSString* appSecret = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"WalkMeAppSecret"];
 
-    [ABBI start:[NSString stringWithString:appKey] withSecretKey:[NSString stringWithString:appSecret]];
+    [ABBI start:[NSString stringWithString:appKey] withSecretKey:[NSString stringWithString:appSecret] andApplicationType:ABBI_APP_HYBRID];
 }
 
 - (void) sendGoal:(CDVInvokedUrlCommand *)command {
