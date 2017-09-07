@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-walkme"
-        version="0.0.9">
+        version="0.0.10">
 
   <name>WalkMe Plugin</name>
 
@@ -66,7 +66,7 @@
     <preference name="ANDROID_APP_KEY" />
     <preference name="ANDROID_APP_SECRET" />
 
-    <framework src="abbi.io:abbisdk:1.1.3" />
+    <framework src="abbi.io:abbisdk:1.1.13" />
 
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="WalkMe">
