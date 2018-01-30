@@ -65,7 +65,7 @@
     <preference name="ANDROID_APP_KEY" />
     <preference name="ANDROID_APP_SECRET" />
 
-    <framework src="abbi.io:abbisdk:1.2.3" />
+    <framework src="abbi.io:abbisdk:1.4.0" />
 
     <config-file target="res/xml/config.xml" parent="/*">
         <feature name="WalkMe">
