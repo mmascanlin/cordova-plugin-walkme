@@ -49,9 +49,8 @@
     
     <header-file src="src/ios/WalkMe.h" />
     <source-file src="src/ios/WalkMe.m" />
-    <header-file src="src/ios/ABBI.h" />
 
-    <framework src="src/ios/lABBISDK.a" custom="true" />
+    <framework src="src/ios/WalkMeSDK.framework" custom="true" embed="true" /> 
     <framework src="AudioToolbox.framework" />
     <framework src="CoreMotion.framework" />
     <framework src="UIKit.framework" />

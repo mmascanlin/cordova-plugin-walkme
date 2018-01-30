@@ -18,7 +18,7 @@
  */
 
 #import <Cordova/CDVPlugin.h>
-#import "ABBI.h"
+#import <WalkMeSDK/WalkMeSDK.h> 
 
 @interface WalkMe : CDVPlugin {}
 
